@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKANKSHA BAGHEL AUTOBIOGRAPHY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Baloo+Bhaijaan+2&family=Balsamiq+Sans:ital@0;1&family=Festive&family=Lato:wght@300&family=Poppins:wght@300;400;700&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(20, 20, 21);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-left: 70px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        .button {
+            margin: 20px;
+            padding: 15px 32px;
+            font-weight: 200;
+            text-align: center;
+            font-size: 20px
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: brown;
+            height: 80px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            /* margin: 0 23px; */
+        }
+        
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(122, 73, 227);
+            font-size: 1rem;
+        }
+        
+        main hr {
+            border: 0;
+            background-color: #733bdc;
+            height: 1px;
+            margin: 35px 60px;
+        }
+        
+        .left {
+            font-size: 1.5rem;
+        }
+        
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        .firstSection>div {
+            width: 30%
+        }
+        
+        .leftSection {
+            /* backgrou2d-color: red; */
+            font-size: 2rem;
+            /* margin: 36px 0 ; */
+        }
+        
+        .leftSection .buttons {
+            padding: 25px;
+            margin-top: 35px;
+        }
+        
+        .leftSection .btn {
+            padding: 12px;
+            color: white;
+            background-color: rgb(24 24 98);
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .rightSection {
+            /* background-color: red; */
+        }
+        
+        .rightSection img {
+            width: 80%;
+            margin: 26px 0;
+        }
+        
+        .purple {
+            color: blueviolet;
+        }
+        
+        #element {
+            color: blueviolet;
+        }
+        
+        .text-gray {
+            color: gray;
+        }
+        
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+        
+        .secondSection .box {
+            background: white;
+            width: 78vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        
+        .image-top {
+            width: 33px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        
+        .vertical-desc {
+            position: relative;
+            width: 150px;
+            top: 86px;
+            font-size: 9px;
+        }
+        
+        footer {
+            background-color: brown;
+        }
+        
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        
+        .footer ul {
+            list-style: none;
+        }
+        
+        .footer>div {
+            width: 223px;
+        }
+        
+        footer .footer-right {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+        
+        .internship {
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin: 30px;
+            display: flex;
+            margin-left: 45px;
+            margin-top: 40px;
+            margin-bottom: -20px;
+        }
+        
+        .projects {
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin: 30px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-coordinate: 0 0;
+            scroll-snap-points-x: repeat(100%);
+            scroll-snap-type: x mandatory;
+            flex: 1;
+            display: flex;
+            -webkit-overflow-scrolling: touch;
+            margin-top: 40px;
+            margin-bottom: -20px;
+        }
+        
+        .contactme {
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin: 30px;
+        }
+        
+        p {
+            margin-top: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .aboutme {
+            box-sizing: border-box;
+            border: #733bdc;
+            border-radius: 40px;
+            text-align: center;
+            margin: 30px;
+            margin-bottom: 70px;
+        }
+        
+        .skills {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 50px;
+            box-sizing: border-box;
+            border-radius: 40px;
+            padding-top: 20px;
+        }
+        
+        .heading {
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            background-color: brown;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .webdevelopment {
+            background-color: black;
+            margin-top: 40px;
+            margin-right: 20px;
+            padding-bottom: -2px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+        }
+        
+        .datascience {
+            background-color: black;
+            margin-top: 40px;
+            margin-right: 20px;
+            padding-bottom: -2px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+        }
+        
+        .videogame {
+            background-color: black;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            margin-right: 20px;
+            padding-bottom: -2px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+        }
+        
+        .notice {
+            background-color: black;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            margin-right: 20px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+            margin-left: 30px;
+        }
+        
+        .ecommerce {
+            background-color: black;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            margin-right: 20px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+            margin-left: 30px;
+        }
+        
+        .meesho {
+            background-color: black;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            margin-right: 20px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+            margin-left: 30px;
+        }
+        
+        .trolley {
+            background-color: black;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            margin-right: 20px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin-bottom: 120px;
+            margin-left: 30px;
+        }
+        
+        .pr {
+            font-size: 22px;
+        }
+        
+        h3 {
+            margin-left: 35px;
+            padding: 40px;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .namee {
+            margin-left: 70px;
+            margin-top: 70px;
+            font-size: 25px
+        }
+        
+        img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Akanksha Baghela</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="/">Project</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+
+            <div class="leftSection">
+                Hi, My name is <span class="purple"> Akanksha</span>
+                <div>And I am passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="akanksha.jpg" alt="">
+
+            </div>
+
+        </section>
+
+        </section>
+
+        <hr>
+
+        <div>
+            <h1>About Me</h1>
+            <div class="aboutme">
+
+                <P>I am Akankksha Baghela and I am a web developer with a vast array of my knowledge in many different front end and backend languages, responsive frameworks,databases and best code practices. My objective is simply to be the best web developer
+                    that I can be and to contribute to the technology industry all that i know and cann do. I am studying in computer science and i believe that my understanding of problem solving and complex algorithms are also skills that havve and
+                    will continue to conntribute to my overall successs as a developer.</P>
+            </div>
+        </div>
+        <div>
+            <h1>My Services</h1>
+            <div class="internship">
+
+                <div class="webdevelopment">
+                    <img src="image/icons8-web-development-48 (2).png" width="100" height="100">
+                    <h2>Web Development</h2>
+
+
+                    <p> Web development is the work involved in developing a website for the Internet. Web development can range from developing a simple single static page of plain text.
+                    </p>
+
+                </div>
+
+                <div class="datascience">
+                    <img src="image/icons8-data-science-64 (1).png" width="100" height="100">
+                    <h2>Data Science</h2>
+                    <p>Data science also integrates domain knowledge from the underlying application domain (e.g., natural sciences, information technology, and medicine).</p>
+
+                </div>
+                <div class="videogame">
+                    <img src="image/icons8-games-folder-48.png" width="100" height="100">
+                    <h2>Game Developmment</h2>
+                    <p>Video game development (or gamedev) is the process of developing a video game. The effort is undertaken by a developer, ranging from a single person.</p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+        </div>
+
+        </section>
+        <section>
+
+            <div>
+                <div class="pr">
+                    <h1>My Projects</h1>
+                </div>
+                <div class="projects">
+
+                    <div class="ecommerce">
+                        <img src="image/WhatsApp Image 2023-09-29 at 20.16.26.jpg" width="200" height="200">
+
+                        <h2>Ecommerce Website for shopping</h2>
+
+                        <p>Ecommerce website that allows to people to buy and sell physical goods, services, and digital products over the internet rather than at a brick and motal location. through an ecommerce website, a bussiness can process orders, accept
+                            payents, manage shipping and provide customer service.</p>
+                    </div>
+                    <div class="meesho">
+                        <img src="image/WhatsApp Image 2023-09-29 at 20.00.12.jpg" width="200" height="200">
+
+                        <h2>Online shopping Ragistration Page</h2>
+                        <p>The registration page can be found on websites where users sign up and create personalized accounts. On this page, it is significant to focus on the simple and functional way to sign up without too many steps and fields to fill
+                            in. If possible, offer users various ways of registration.</p>
+                    </div>
+                    <div class="trolley">
+                        <img src="image/WhatsApp Image 2023-09-29 at 20.16.25.jpg" width="200" height="200">
+                        <h2>Zigbee based E-menu Ordering System</h2>
+                        <p>In this project there is no need of waiter for take orders from costumers in restaurants. It is an embedded system which is to be installed on every table in the restaurant. A touch screen display is provided on each of the table,
+                            Zigbee transmitter on user side and LCD on another side.</p>
+                    </div>
+                    <div class="notice">
+                        <img src="image/WhatsApp Image 2023-09-29 at 20.00.14.jpg" width="200" height="200">
+                        <h2>Electronic Notice Board Using GSM Technology</h2>
+                        <p>Electronice notice board id display the item on screen whatever we purchase. the GSM Technology as mobile phones (that communicate through GSM Technology) have become very abundant, cheap and easy to use The project displays the
+                            data on LCD whatever we sent from the mobile.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <h1>My Skills</h1>
+            <div class="heading">
+
+
+
+
+
+            </div>
+            <div class="skills">
+                <div class="footer-second">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstarp</li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Python</li>
+                        <li>Data Mining</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Computer Networking </li>
+                        <li> MySQL</li>
+                        <li>PHP</li>
+                        <li>Functional Paradigm Programming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        </div>
+        <div>
+            <h1>Contact Me</h1>
+
+            <div class="contactme">
+
+            </div>
+            <div>
+                <div class="namee">
+                    <h4>Name</h4>Akanksha Baghela
+                    <h4>Address</h4>Kachhpura, Agra
+                    <h4>Email</h4>akankshabaghel@gmail.com
+
+                </div>
+                <div class="message">
+                    <h3>Message me</h3>
+
+
+                    <div class="name">
+
+                        <input type="text" placeholder="Enter Your Full Name">
+                        <div class="maiil id">
+
+                            <input type="text" placeholder="Enter Your Email">
+                            <div class="phone no">
+
+                                <input type="text" placeholder="Enter Your Phone Number">
+
+
+                                <label for="message"></label>
+                                <input type="text" placeholder="Enter a Message">
+
+
+                                <div class="button">
+
+                                    <button class="button">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <div class="footer-first">
+                Akanksha Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+
+                    <li><img src="image/bg1.png" height="50" width="50"></li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><img src="image/bg7.png" height="50" width="50"></li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><img src="image/annu.jpeg" width="50" height="50"></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            copyright&#169; www.akankshaportofolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
